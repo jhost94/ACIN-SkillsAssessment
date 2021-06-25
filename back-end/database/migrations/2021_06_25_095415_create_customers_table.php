@@ -21,6 +21,8 @@ class CreateCustomersTable extends Migration
             $table->string("address");
             $table->string("phone");
             $table->integer("nif");
+            $table->bigInteger("user_id")->unsigned();
+            $table->foreign("user_id")->references("id")->on("users");
         });
     }
 
