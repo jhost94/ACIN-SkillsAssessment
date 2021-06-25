@@ -1,0 +1,31 @@
+body {
+    background-color: grey;
+}
+
+.wellcome-img {
+    max-width: 90vw;
+}
+
+header {
+    align-items: right;
+    text-align: right;
+}
+
+.user-div {
+    display: block;
+    max-width: 300px;
+    max-height: auto;
+}
+
+.user-div img {
+    width: 30px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}

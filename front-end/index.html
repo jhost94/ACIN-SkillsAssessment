@@ -5,11 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="vendor/jquery-3.6.0.js"></script>
     <title>ACIN- Skills Assessment</title>
+    <script src="js/index.js"></script>
 </head>
+<header>
 
-<body>
+    <div class="user-div">
+        <img src="resources/icons/user_icon.png" alt="user">
+        <a href="#" class="user" id="login-link">Login</a>
+        <script>
+            mainModule.setEvent.onClick("#login-link", (event) => {
+                event.preventDefault();
+                mainModule.load.loginForm();
+            })
+        </script>
+        <a href="#"><img src="resources/icons/login_icon.png" class="login-img login" alt="login"></a>
+        <script>
+            mainModule.setEvent.onClick("#login-img", (event) => {
+                event.preventDefault();
+                mainModule.load.loginForm();
+            })
+        </script>
+    </div>
+</header>
 
+<body class="content">
+    <img src="resources/welcome.png" class="wellcome-img" alt="Welcome">
 </body>
 
 </html>

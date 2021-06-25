@@ -1,0 +1,22 @@
+<form action="post">
+    <div>
+        <label for="login-email">Email</label>
+        <input type="text" name="email" id="login-email">
+    </div>
+    <div>
+        <label for="login-password"></label>
+        <input type="password" name="password" id="login-passsord">
+    </div>
+    <div>
+        <input type="button" value="submit" id="login-btn">
+        <script>
+            mainModule.setEvent.onClick("#login-btn", event => {
+                let user = {};
+                user.email = $("input[type=text][name=email]").val();
+                user.password = $("input[type=password][name=password]").val();
+
+                mainModule.auth.login(user);
+            });
+        </script>
+    </div>
+</form>
