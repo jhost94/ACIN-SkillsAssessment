@@ -60,3 +60,11 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## TODO
+# Database: pastel_doce - DONE
+# product: description, prep_time, weight, price - DONE
+# ingredient: name, unit (dl, gr), stock - DONE
+# many-to-many: product && ingredient - DONE
+# customer: name, address, phone, NIF - DONE 
+# order: customer, product - DONE
